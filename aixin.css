@@ -1,0 +1,55 @@
+body{
+  background-color: rgb(41, 141, 207);
+}
+.box{
+  width:180px;
+  height:160px;
+  margin:100px auto;
+  animation:size 1s infinite;
+  animation-direction:alternate;
+  transition:1s all;
+  /* border: 1px solid black; */
+ }
+ .round1{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background-color:hotpink;
+  left: 0;
+  top: 0;
+  position:absolute; 
+ }
+ .round2{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background-color:hotpink;
+  position:absolute;
+  right: 0;
+  top: 0;
+ }
+ .bottom{
+  width:100px;
+  height:100px;
+  background-color:hotpink;
+  position:absolute;
+  top:40px;
+  left:40px;
+  transform:rotate(45deg); 
+ }
+ @keyframes size{
+  0%{
+   transform:scale(0.7);
+  }
+  100%{
+   transform:scale(2);
+  }
+ }
+ .cntt{
+  text-align: center;
+ font:bold 60px Arial, Helvetica, sans-serif;
+ color: rgb(179, 11, 240);
+ text-shadow: 0 0 0.2em #f87,
+
+    0 0 0.2em #f87;
+ }
